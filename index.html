@@ -20,17 +20,46 @@
                 <form id="survey-form">
                     <div class="mb-3">
                         <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name">
+                        <input type="text" class="form-control" id="name-label" placeholder="Your name goes here">
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                        <input type="email" class="form-control" id="email-label" aria-describedby="emailHelp" placeholder="mail@.com">
                         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                     </div>
                     <div class="mb-3">
                         <label for="number" class="form-label">Number</label>
-                        <input type="number" class="form-control" id="number">
+                        <input type="number" class="form-control" id="number-label" min="18" max="60" placeholder="18-60">
                     </div>
+                    <select id="dropdown">
+                      <option value="Option1">Apple</option>
+                      <option value="Option1">Orange</option>
+                    </select>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        Default radio
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                      <label class="form-check-label" for="flexRadioDefault2">
+                        Default checked radio
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Default checkbox
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Checked checkbox
+                      </label>
+                    </div>
+                    <textarea cols="50" maxlength="200" rows="4"></textarea>
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
                         <label class="form-check-label" for="exampleCheck1">Check me out</label>
